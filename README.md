@@ -173,15 +173,15 @@ Applying the Gross-to-Net calculation to my bottom-up volume projections gives t
 ### How I Calculate Price Elasticity of Demand (PED)
 Price Elasticity of Demand measures how sensitive a channel's shipment volume ($Q$) is to changes in the effective net selling price ($P$):
 
-$$\text{PED}_c = \frac{\%\Delta Q_c}{\%\Delta P_c} = \frac{(Q_1 - Q_0) / Q_0}{(P_1 - P_0) / P_0}$$
+$$\text{PED}_c = \frac{\Delta Q_c / Q_c}{\Delta P_c / P_c} = \frac{(Q_1 - Q_0) / Q_0}{(P_1 - P_0) / P_0}$$
 
 To estimate $\text{PED}_c$ from the 24-month historical dataset without seasonal distortion, I first remove the monthly seasonal index from shipped volume ($Q_{c,t}^{\text{adj}}$) and compute the realized net price per piece after contra deductions ($P_{c,t}^{\text{net}} = \text{Net Sales}_{c,t} / Q_{c,t}$). I then fit a log-log Ordinary Least Squares (OLS) regression for each channel:
 
 $$\ln\left(Q_{c,t}^{\text{adj}}\right) = \alpha_c + \text{PED}_c \cdot \ln\left(P_{c,t}^{\text{net}}\right) + \varepsilon_{c,t}$$
 
-When simulating a price change of $\Delta P\%$ in `src/finance.py`, the projected volume response is calculated as:
+When simulating a price change of $\Delta P$ in `src/finance.py`, the projected volume response is calculated as:
 
-$$Q_{\text{new}} = Q_{\text{base}} \times \left(1 + \text{PED}_c \cdot \Delta P\%\right)$$
+$$Q_{\text{new}} = Q_{\text{base}} \times (1 + \text{PED}_c \cdot \Delta P)$$
 
 ### Channel Pricing & Rebate Scenarios
 Using these PED coefficients, I evaluate how a **+5% list price increase** vs. a **-2% contra rebate reduction** impacts monthly net revenue across channels:
