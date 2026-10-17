@@ -251,7 +251,7 @@ def build_channel_revenue_exposure_table(grid_df):
     tot_row = pd.DataFrame([{
         "channel_code": "TOTAL",
         "channel_name": "Portfolio Total",
-        "contra_rate": ch_agg['rec_p50_jpy'].sum() / (ch_agg['rec_p50_pcs'] * grid_df['base_list_price'].mean()).sum() if len(grid_df) > 0 else 0.0,
+        "contra_rate": 1.0 - (ch_agg['rec_p50_jpy'].sum() / (grid_df['rec_p50_pcs'] * grid_df['base_list_price']).sum()) if len(grid_df) > 0 and (grid_df['rec_p50_pcs'] * grid_df['base_list_price']).sum() > 0 else 0.0,
         "target_pcs": ch_agg['target_pcs'].sum(),
         "rec_p50_pcs": ch_agg['rec_p50_pcs'].sum(),
         "rec_p10_pcs": ch_agg['rec_p10_pcs'].sum(),
