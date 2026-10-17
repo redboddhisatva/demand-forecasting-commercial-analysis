@@ -1,4 +1,4 @@
-# Recurring Demand Forecasting & Commercial Gap Analysis
+# Demand Forecasting & Commercial Gap Analysis
 **Scope:** Japan Contact Lens Portfolio | 24M Historical Actuals (Oct 2024 - Sep 2026) & 6M Forward Plan (Oct 2026 - Mar 2027)
 
 ---
