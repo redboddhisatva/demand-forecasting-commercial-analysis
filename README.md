@@ -5,6 +5,9 @@
 
 ## Project Overview & Introduction
 
+First of all, understanding the business flow is critical before proceeding directly to the analysis. Each company and each industry may have a different business flow. 
+In the scenario below, it explores the Japan contact lens industry using dummy data I generated using random data generator.
+
 In the contact lens industry, monthly shipment volume is driven by two very different customer behaviors:
 1. **Recurring Demand:** Steady, repeat refill orders from existing patients who wear daily or bi-weekly disposable lenses.
 2. **Non-Recurring Demand:** One-off volume spikes driven by hospital tender wins, new optical retail store openings, and seasonal distributor bulk deals.
