@@ -1,0 +1,5 @@
+brand_code,brand_name,modality,tier,pcs_per_pack,base_list_price
+BRAND_A,Brand A,1-Day,Volume Core,30,30.0
+BRAND_B,Brand B,1-Day,Premium Growth,30,38.0
+BRAND_C,Brand C,2-Week,Mainstream,6,28.0
+BRAND_D,Brand D,1-Day,Specialty Niche,30,42.0

@@ -1,0 +1,5 @@
+channel_code,channel_name,ped_coefficient,target_contra_rate
+CH_ONLINE,E-Commerce / Direct-to-Consumer,-4.51,0.181
+CH_RETAIL_CHAIN,Optical Retail Chains,-1.11,0.052
+CH_CLINIC_INST,Clinics & Ophthalmologist,0.0,0.025
+CH_DIRECT_ACC,Direct Independent Accounts,-1.43,0.018
