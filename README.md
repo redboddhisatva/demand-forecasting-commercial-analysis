@@ -107,7 +107,7 @@ Subtracting the bottom-up P50 recurring forecast from the corporate budget targe
 | **CH_RETAIL_CHAIN** | Optical Retail Chains | 409.06M | 297.15M | **111.92M** | 27.4% | Quarter-end tier volume rebates & new store rollouts |
 | **CH_ONLINE** | E-Commerce / Online | 349.32M | 258.54M | **90.78M** | 26.0% | Multi-box subscription bundles (maintain list price) |
 | **CH_CLINIC_INST** | Eye Clinics & Hospitals | 154.60M | 111.85M | **42.74M** | 27.6% | Hospital tender contracts & trial fitting kits |
-| **CH_DIRECT_ACC** | Direct Key Accounts | 101.20M | 73.90M | **27.30M** | 27.0% | Annual B2B volume agreements |
+| **CH_DIRECT_ACC** | Direct Key Accounts | 101.20M | 73.90M | **27.30M** | 27.0% | Q4/Q1 spot bulk allocations & fiscal year-end stretch tiers |
 | **Total** | **All Channels** | **1,014.18M** | **741.44M** | **272.74M** | **26.9%** | **Total Non-Recurring Volume Quota** |
 
 ### B. 6-Month Volume Gap by Brand (Million Pcs)
@@ -188,7 +188,7 @@ Using these PED coefficients, I evaluate how a **+5% list price increase** vs. a
 |:---|:---|:---:|:---:|:---:|:---:|:---|
 | **CH_CLINIC_INST** | Eye Clinics & Hospitals | **0.00** | ¥854.0M | **+¥42.8M** (0% vol loss) | **+¥19.0M** | **Margin Expansion:** Demand is prescription-driven and price-inelastic; reduce contra rebates or adjust list prices without volume attrition. |
 | **CH_RETAIL_CHAIN** | Optical Retail Chains | **-1.11** | ¥1,496.8M | -¥12.4M (-5.6% vol loss) | **+¥36.8M** | **Conditional Volume Tiers:** Hold base list price; pay contra rebates strictly on incremental volume above the P50 baseline. |
-| **CH_DIRECT_ACC** | Direct Key Accounts | **-1.43** | ¥377.0M | -¥9.6M (-7.2% vol loss) | **+¥8.8M** | **Contract Rebate Caps:** Cap off-invoice discounts; structure annual rebate tiers to lock in the 27.30M pcs gap. |
+| **CH_DIRECT_ACC** | Direct Key Accounts | **-1.43** | ¥377.0M | -¥9.6M (-7.2% vol loss) | **+¥8.8M** | **Incremental Stretch Rebates:** Cap off-invoice discounts; use Q4/Q1 back-end stretch rebates to lock in the 27.30M pcs gap. |
 | **CH_ONLINE** | E-Commerce / Online | **-4.51** | ¥941.6M | **-¥186.8M** (-22.6% vol loss) | **+¥24.2M** | **Price Protection:** Highly price-elastic; avoid list price increases. Close the 90.78M pcs gap using multi-box bundle promotions. |
 
 ---
@@ -202,7 +202,7 @@ Using these PED coefficients, I evaluate how a **+5% list price increase** vs. a
    - **Retail Chains (111.92M pcs / ¥3,253.9M JPY):** Focus on Q3 and Q4 quarter-end volume tier incentives, conditional on accounts exceeding their historical recurring run-rate.
    - **Online (90.78M pcs / ¥3,146.3M JPY):** Drive volume through 90-pack and multi-box subscription bundles rather than unit price cuts.
    - **Eye Clinics (42.74M pcs / ¥1,200.9M JPY) & Brand B Focus:** **Brand B** accounts for **¥5,069.7M JPY (60.6%)** of the total company revenue gap. Prioritize hospital tenders and practitioner fitting programs for Brand B.
-   - **Direct Accounts (27.30M pcs / ¥760.7M JPY):** Secure upfront volume commitments during annual contract renewals.
+   - **Direct Accounts (27.30M pcs / ¥760.7M JPY):** Execute Q4 and Q1 bridge volume addendums and seasonal bulk drop-shipments tied to December and March fiscal year-end stretch rebates, rather than cutting off-invoice prices.
 
 ---
 
