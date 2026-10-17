@@ -54,8 +54,7 @@ $$\text{Actual Volume}_t = \text{Level}_t + \text{Seasonality}_t + \text{Residua
 
 I evaluate three time-series models and their equal-weighted combination over the last 12 closed months (Oct 2025 - Sep 2026) in `src/models.py`. Models are re-estimated sequentially each month using only prior data to mirror real production planning:
 
-1. **Damped Naive ($\phi = 0.70$):** Uses the same calendar month from 12 months prior plus a year-over-year local drift term damped at $\phi = 0.70$ per step:
-   $$\hat{Y}_{t+h} = Y_{t+h-12} + \phi^h \cdot \text{Drift}_{\text{YoY}}$$
+1. **Damped Naive ($\phi = 0.70$):** Uses the same calendar month from 12 months prior plus a year-over-year local drift term damped at $\phi = 0.70$ per step: $\hat{Y}_{t+h} = Y_{t+h-12} + \phi^h \cdot \text{Drift}_{\text{YoY}}$
    * **Why I chose $\phi = 0.70$:** Contact lens shipments experience strong quarterly restocking spikes every 3 months (Mar, Jun, Sep, Dec). If $\phi$ is set too high (e.g., $0.90$), a strong quarter-end surge lingers for the entire 6-month horizon ($0.90^6 = 53.1\%$), causing systematic over-forecasting. Setting $\phi = 0.70$ preserves **70.0%** of recent momentum in Month 1 and **49.0%** in Month 2, decays to **34.3%** by the end of the first quarter (Month 3), and fades to **11.8%** by Month 6 - acting as a conservative stabilizer against the un-damped linear trend model.
 2. **Linear Trend + Seasonality (OLS):** Fits a linear trend on historical volume and adds the average detrended seasonal lift for each calendar month.
 3. **Exponential Smoothing (Holt-Winters Additive):** Updates local level and 12-month seasonal indices dynamically, initialized with a flat slope ($b_0 = 0$) so quarter-end spikes are absorbed into seasonal factors rather than inflating the trend.
